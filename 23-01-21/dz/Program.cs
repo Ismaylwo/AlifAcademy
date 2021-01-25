@@ -178,37 +178,39 @@ namespace dz
             }
             */
             // ДЗ 3.3
-            /*int N , Count, Index;
-            Console.Write("Введите N - ");
-            N = int.Parse(Console.ReadLine());
-            int[] arrN = new int[N];
-            for (int i = 0; i < arrN.Length; i++) {
-                Console.Write("Введите элементы массива - ");
-                arrN[i] =int.Parse(Console.ReadLine());
-            }
-            foreach (var item in arrN)
-                {
-                    Console.Write(item + " ");
-                }
-            Console.Write("Count - ");
-            Count =int.Parse(Console.ReadLine());
-            Console.Write("Index - ");
-            Index =int.Parse(Console.ReadLine());
-            int[] newArrN = new int[Count];
-            for (int i = 0 ;i < Count;i++){
-                if (i+Index < arrN.Length){
-                    newArrN[i] = arrN[Index + i];
-                }
-                else {
-                    newArrN[i] = 1;
-                }
-            }
-            foreach (var item2 in newArrN)
+           int N , Count , Index;
+          Console.Write("Введите N - ");
+          N = int.Parse(Console.ReadLine());
+          int[] arrN = new int[N];
+          for (int i = 0 ; i < arrN.Length; i++) {
+              Console.Write($"Введите {i}-й элемент массива  ");
+              arrN[i] = int.Parse(Console.ReadLine());
+          }
+          foreach (var itemsArr in arrN)
+          {
+              Console.Write($" {itemsArr} ");
+          }
+          Console.Write("\n");
+          Console.Write("Введите Count - ");
+          Count = int.Parse(Console.ReadLine());
+          Console.Write("Введите Index - ");
+          Index = int.Parse(Console.ReadLine());
+          int[] newArrN = new int[Count];
+          for (int i = 0; i < Count; i++) {
+              if (i+Index < arrN.Length)
+              {
+                  newArrN[i] = arrN[i+Index];
+              }
+              else
+              {
+                  newArrN[i] = 1;
+              }
+          }
+            Console.Write("Новый массив");
+            foreach (var item in newArrN)
             {
-                Console.Write(item2 + " ");
+                Console.Write($" {item} ");
             }
-            */
-            // Ёще не выполнена
            
         }
     }
